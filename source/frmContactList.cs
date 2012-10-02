@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+  This Source Code Form is subject to the terms of the Mozilla Public
+  License, v. 2.0. If a copy of the MPL was not distributed with this
+  file, You can obtain one at http://mozilla.org/MPL/2.0/.
+*/
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -191,7 +197,8 @@ namespace LolChatWin
         {
             inFileName = Path.GetFileName(inFileName);
             int charPos = inFileName.IndexOf('_');
-            string outResult = inFileName.Substring(0, charPos);
+            string champName = inFileName.Substring(0, charPos);
+            string outResult = champName.ToLower;
             return outResult;
         }
 
@@ -216,7 +223,7 @@ namespace LolChatWin
             // Load icons
             foreach (string file in Directory.GetFiles(iconResFolder, "*.png"))
             {
-                imgChamps.Images.Add(Path.GetFileName(file), Image.FromFile(file));
+                imgChamps.Images.Add(Path.GetFileName(file).ToLower, Image.FromFile(file));
             }
 
             lstBuddies.Columns.Add("Nickname");
