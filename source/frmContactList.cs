@@ -197,9 +197,8 @@ namespace LolChatWin
         {
             inFileName = Path.GetFileName(inFileName);
             int charPos = inFileName.IndexOf('_');
-            string champName = inFileName.Substring(0, charPos);
-            string outResult = champName.ToLower;
-            return outResult;
+            string outResult = inFileName.Substring(0, charPos);
+            return outResult.ToLower();
         }
 
         private void frmContactList_Load(object sender, EventArgs e)
@@ -223,7 +222,7 @@ namespace LolChatWin
             // Load icons
             foreach (string file in Directory.GetFiles(iconResFolder, "*.png"))
             {
-                imgChamps.Images.Add(Path.GetFileName(file).ToLower, Image.FromFile(file));
+                imgChamps.Images.Add(Path.GetFileNameWithoutExtension(file).ToLower(), Image.FromFile(file));
             }
 
             lstBuddies.Columns.Add("Nickname");
