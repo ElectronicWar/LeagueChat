@@ -51,7 +51,7 @@
             // 
             // imgChamps
             // 
-            this.imgChamps.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imgChamps.ColorDepth = System.Windows.Forms.ColorDepth.Depth24Bit;
             this.imgChamps.ImageSize = new System.Drawing.Size(60, 60);
             this.imgChamps.TransparentColor = System.Drawing.Color.Transparent;
             // 
