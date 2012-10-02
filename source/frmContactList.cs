@@ -187,6 +187,14 @@ namespace LolChatWin
             jm.Disconnect();
         }
 
+        private string extractChampionNameFromFile(string inFileName)
+        {
+            inFileName = Path.GetFileName(inFileName);
+            int charPos = inFileName.IndexOf('_');
+            string outResult = inFileName.Substring(0, charPos);
+            return outResult;
+        }
+
         private void frmContactList_Load(object sender, EventArgs e)
         {
             Settings.Default.Reload();
@@ -197,10 +205,20 @@ namespace LolChatWin
             }
             Started = true;
             
-            foreach (string file in Directory.GetFiles(Path.Combine( Path.GetDirectoryName( Application.ExecutablePath ) ,"Champs")))
+            string champResFolder = Path.Combine( Path.GetDirectoryName( Application.ExecutablePath ), "Resources", "Champions");
+            string iconResFolder  = Path.Combine( Path.GetDirectoryName( Application.ExecutablePath ), "Resources", "Icons");
+
+            foreach (string file in Directory.GetFiles(champResFolder, "*.png"))
             {
-                imgChamps.Images.Add(Path.GetFileNameWithoutExtension( file), Image.FromFile(file));
+                imgChamps.Images.Add(extractChampionNameFromFile(file), Image.FromFile(file));
             }
+
+            // Load icons
+            foreach (string file in Directory.GetFiles(iconResFolder, "*.png"))
+            {
+                imgChamps.Images.Add(Path.GetFileName(file), Image.FromFile(file));
+            }
+
             lstBuddies.Columns.Add("Nickname");
             lstBuddies.Columns.Add("duration");
             lstBuddies.Columns.Add("rankedRating");
