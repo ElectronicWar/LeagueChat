@@ -1,0 +1,42 @@
+
+The topic says it, this is a guide on how to access the PVP chat with the open source chat program pidgin. You will be able to do this with other chat programs which are able to handle XMPP.
+
+So the first thing you need to do is download pidgin. You can find it here: http://www.pidgin.im/download/
+Now add a new account. 
+Change the protocol to XMPP.
+Username is your league of legends log in name.
+Domain is "pvp.net" without the ".
+Resource is xiff.
+Password is AIR_"your league of legends password" so if your league of legends password is 1234 its AIR_1234.
+Connection security (don´t know how its called in english because my pidgin is installed in german) you have to set to "Force SSL (old-style)".
+The Port need to be set at 5223.
+Servers are Server: chat.na1.lol.riotgames.com (for NA) chat.eu.lol.riotgames.com (for EU West) Server: chat.eun1.lol.riotgames.com (for EU Nordic/East)
+
+To this point all credits need to go to Jabe because all its written here he made up first and I got most of the information by him!
+
+So now you are able to join the PVP chat and chat. But from at this point you can´t go for any public chats.
+You can get a list searching all chats at conference.pvp.net but there all cryptic names and stuff. You can´t sort them anyhow and you will see TONS of chats. I had big trouble solving this problem but the german wrenchmen AmShager was able to help me here.
+
+All public chats have the same first part. This is: "pu~".
+The second part is the chat name you want to join but you have to set all big letters to small letters. So if you want to join "DominateDominion" you have to set it to "dominatedominion". Now you need to hash it with the SHA-1 method. Just googled one website which helps us here: http://www.hashgenerator.de/. Now we know the second part is "e60006fb1aaec9264557b8203839407f17825b78".
+
+Now we can put both together and this in join chat. Room is: "pu~e60006fb1aaec9264557b8203839407f17825b78". The rest of the options should be in there already. If its not just choose the XMPP-LOL account and it should do the trick.
+
+The third part is another one i didn´t make up myself. Its made up by several guys at reddit but don´t know anyone of them anymore. So i can´t give the credits but I want to point out that I didn´t invent this stuff.
+
+Your status needs to look like this:
+
+<body><profileIcon>28</profileIcon><statusMsg></statusMsg><level>1</level><wins>1337</wins><leaves>0</leaves><queueType>RANKED_SOLO_5x5</queueType><rankedWins>1337</rankedWins><rankedLosses>0</rankedLosses><rankedRating>1337</rankedRating><tier>PLATINUM</tier><skinname>Annie</skinname><gameStatus>inGame</gameStatus><timeStamp>1317686957096</timeStamp></body>
+
+profileIcon can go from 1-28.
+statusMsg you can put in whatever you want to.
+level weirdly enough can go from -30 to 30.
+wins, leaves, rankedWins, rankedLosses, rankedRating, timestamp you just can put any number you want.
+tier is self explaining i guess.
+queueType is shown as the game you are actually in.
+skinname is the champion which is shown like you are playing it in that game.
+gameStatus should be self explaining too.
+
+If you mess up with any of this, this can make you shown in chat with a blank status.
+
+I hope this helps. I´m from Germany so english isn´t my native language and the NA server is just for chatting here because you guys at dominatedominion chat rock!

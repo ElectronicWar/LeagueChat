@@ -32,9 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmContactList));
             this.imgChamps = new System.Windows.Forms.ImageList(this.components);
             this.pblConnect = new System.Windows.Forms.Panel();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.lblPassword = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.lblUsername = new System.Windows.Forms.Label();
@@ -45,7 +43,8 @@
             this.tsBuddies = new System.Windows.Forms.ToolStrip();
             this.btnDisconnect = new System.Windows.Forms.ToolStripButton();
             this.btnAbout = new System.Windows.Forms.ToolStripButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cbServer = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.pblConnect.SuspendLayout();
             this.tsBuddies.SuspendLayout();
             this.SuspendLayout();
@@ -58,59 +57,38 @@
             // 
             // pblConnect
             // 
+            this.pblConnect.Controls.Add(this.label1);
+            this.pblConnect.Controls.Add(this.cbServer);
             this.pblConnect.Controls.Add(this.textBox1);
-            this.pblConnect.Controls.Add(this.radioButton3);
-            this.pblConnect.Controls.Add(this.radioButton2);
-            this.pblConnect.Controls.Add(this.radioButton1);
             this.pblConnect.Controls.Add(this.lblPassword);
             this.pblConnect.Controls.Add(this.txtPassword);
             this.pblConnect.Controls.Add(this.lblUsername);
             this.pblConnect.Controls.Add(this.txtUsername);
             this.pblConnect.Controls.Add(this.btnConnect);
             this.pblConnect.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pblConnect.Location = new System.Drawing.Point(0, 405);
+            this.pblConnect.Location = new System.Drawing.Point(0, 453);
             this.pblConnect.Name = "pblConnect";
-            this.pblConnect.Size = new System.Drawing.Size(321, 203);
+            this.pblConnect.Size = new System.Drawing.Size(321, 155);
             this.pblConnect.TabIndex = 10;
             this.pblConnect.Visible = false;
             // 
-            // radioButton3
+            // textBox1
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(221, 64);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(83, 17);
-            this.radioButton3.TabIndex = 15;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Europe East";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(121, 64);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(87, 17);
-            this.radioButton2.TabIndex = 14;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Europe West";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(12, 64);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(92, 17);
-            this.radioButton1.TabIndex = 13;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "North America";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.textBox1.Location = new System.Drawing.Point(12, 118);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(297, 31);
+            this.textBox1.TabIndex = 16;
+            this.textBox1.Text = "LeagueChatEx is free open-source software.\r\nClick the button below to visit the p" +
+    "rojects GitHub page.";
             // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(16, 41);
+            this.lblPassword.Location = new System.Drawing.Point(14, 41);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(53, 13);
             this.lblPassword.TabIndex = 10;
@@ -142,9 +120,9 @@
             // 
             // btnConnect
             // 
-            this.btnConnect.Location = new System.Drawing.Point(243, 12);
+            this.btnConnect.Location = new System.Drawing.Point(82, 91);
             this.btnConnect.Name = "btnConnect";
-            this.btnConnect.Size = new System.Drawing.Size(61, 46);
+            this.btnConnect.Size = new System.Drawing.Size(151, 21);
             this.btnConnect.TabIndex = 6;
             this.btnConnect.Text = "Connect";
             this.btnConnect.UseVisualStyleBackColor = true;
@@ -167,7 +145,7 @@
             this.lstBuddies.Location = new System.Drawing.Point(0, 0);
             this.lstBuddies.MultiSelect = false;
             this.lstBuddies.Name = "lstBuddies";
-            this.lstBuddies.Size = new System.Drawing.Size(321, 405);
+            this.lstBuddies.Size = new System.Drawing.Size(321, 453);
             this.lstBuddies.SmallImageList = this.imgChamps;
             this.lstBuddies.TabIndex = 9;
             this.lstBuddies.TileSize = new System.Drawing.Size(300, 64);
@@ -202,21 +180,31 @@
             this.btnAbout.Image = ((System.Drawing.Image)(resources.GetObject("btnAbout.Image")));
             this.btnAbout.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnAbout.Name = "btnAbout";
-            this.btnAbout.Size = new System.Drawing.Size(60, 22);
-            this.btnAbout.Text = "About";
+            this.btnAbout.Size = new System.Drawing.Size(152, 22);
+            this.btnAbout.Text = "Website && Source Code";
             this.btnAbout.Click += new System.EventHandler(this.btnAbout_Click);
             // 
-            // textBox1
+            // cbServer
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.textBox1.Location = new System.Drawing.Point(12, 96);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(297, 104);
-            this.textBox1.TabIndex = 16;
-            this.textBox1.Text = resources.GetString("textBox1.Text");
+            this.cbServer.FormattingEnabled = true;
+            this.cbServer.Items.AddRange(new object[] {
+            "(NA) North America",
+            "(EUW) EU West",
+            "(EUNE) EU Nordic & East"});
+            this.cbServer.Location = new System.Drawing.Point(82, 64);
+            this.cbServer.Name = "cbServer";
+            this.cbServer.Size = new System.Drawing.Size(151, 21);
+            this.cbServer.TabIndex = 17;
+            this.cbServer.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(14, 67);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(38, 13);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "Server";
             // 
             // frmContactList
             // 
@@ -228,7 +216,7 @@
             this.Controls.Add(this.tsBuddies);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmContactList";
-            this.Text = "LeagueChat";
+            this.Text = "LeagueChatEx";
             this.Load += new System.EventHandler(this.frmContactList_Load);
             this.Move += new System.EventHandler(this.frmContactList_Move);
             this.Resize += new System.EventHandler(this.Form1_Resize);
@@ -255,10 +243,9 @@
         private System.Windows.Forms.ToolStrip tsBuddies;
         private System.Windows.Forms.ToolStripButton btnDisconnect;
         private System.Windows.Forms.ToolStripButton btnAbout;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cbServer;
     }
 }
 

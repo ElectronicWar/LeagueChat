@@ -28,35 +28,14 @@ namespace LolChatWin
         private bool Started = false;
         private int getServer()
         {
-            if (radioButton1.Checked)
-            {
-                return 0;
-            }
-            else if (radioButton2.Checked)
-            {
-                return 1;
-            }
-            else
-            {
-                return 2;
-            }
+            return cbServer.SelectedIndex;
         }
 
         private void setServer(int value)
         {
-            if (value == 0)
-            {
-                radioButton1.Checked = true;
-            }
-            else if (value == 1)
-            {
-                radioButton2.Checked = true;
-            }
-            else
-            {
-                radioButton3.Checked = true;
-            }
+            cbServer.SelectedIndex = value;
         }
+
         private void button1_Click(object sender, EventArgs e)
         {
             Settings.Default.Username = txtUsername.Text;
@@ -295,7 +274,12 @@ namespace LolChatWin
 
         private void btnAbout_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("http://vrokolos.github.com/LeagueChat/");
+            System.Diagnostics.Process.Start("https://github.com/ElectronicWar/LeagueChat");
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
 
     }

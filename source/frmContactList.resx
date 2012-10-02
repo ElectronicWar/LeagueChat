@@ -120,12 +120,6 @@
   <metadata name="imgChamps.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>130, 17</value>
   </metadata>
-  <data name="textBox1.Text" xml:space="preserve">
-    <value>This is an open source program. 
-You can find the source code at http://vrokolos.github.com.
-
-Your username and password will only be used to access the Riot chat server and won't be sent anywhere else.</value>
-  </data>
   <metadata name="trayBuddies.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
@@ -561,22 +555,21 @@ Your username and password will only be used to access the Riot chat server and 
   <data name="btnDisconnect.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADSSURBVDhPY2AYBRghoOHf9V/Zuw2OkRUgi4PUYWgW9+39
-        n9e//f/SIw//bzz9+D+If2whAxiDFIP4IHGQPEgdhiEwBUXzLoIVgmx8d9UcwwCQPMgQkDyKK0ACIImq
-        BefANMhAdC+AxIsXn0eVBykEYZABfZtvgA0A0dgMQJbHcAFIA0hz1oKLYBpdAYgPEgd5AZs8OJCypp8E
-        OxFkCHoYgPggObA8UB1GIIIU2GQuAkuCbECPBZA8yHaQPEgduhfB4QUyFRYe2MIAJoc1HQzNfAUArbbr
-        Y/V3BN0AAAAASUVORK5CYII=
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADWSURBVDhPYxgFmEDDv+u/sncbHEOFwQBZHKQOKowA4r69
+        //P6t/9feuTh/42nH/8H8Y8tZABjmDxIHCQPUodhCExB0byLYBpk07ur5hgGgORBhqC7EOxEkETVgnNg
+        GqQBKgUGMPnixedR5UEMEAYp6Nt8A2wAiMZmALI8hgtAGkCSWQsugml0BSA+SBzkBWzyYAOypp8EOxFk
+        CEgBchiA+CA5sDxQHUYgghTYZC4CS4JsABmIHAsgeZDtIHmQOnQvggHIVJAESDG6ApgYiMaaDoYiYGAA
+        AK2262O7jatsAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="btnAbout.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAELSURBVDhPnZMxD8FAFMfvC/hUfACb2CQSk8FiszCwsOhG
-        wi4dWLHxAfo1NGoQSiv69F95zfW018Yll16u9/+9/3vvToiMYe6tprmzKJrhOutc6j6LgyCgm+vReLYu
-        DmHx039Te/6gcu9OtnMtBpEjQ8yjVHPodM6BsBgiiJeHVwyotFakhaiRIcbsGsdo9k0vgqZC1JxZHIcP
-        F3AAQGOaAkGbUG22DYCx9Wm08RIpQFyfuFQdugknAgC0CtWWxbDNAw5YjHOcSmewIIEU0GdUGT8QmXOW
-        AYisiuMLxhD78oXILZQhcuSf26k64Q7wVyvm+6xCtLZ1j0iuSaHIKkx2guKi2n+9SDjJE38A9NYOciFY
-        ubYAAAAASUVORK5CYII=
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD1SURBVDhPlZGxDsFQFIb7Ap6KB7CJTSIxGSw2CwMLi24k
+        7NKBFRsP0NcgGITSih79b/3JbdNW/clJbu7t953Te420WFu7bm1sURWsv9v5Qtj3fbk5rgwny/wSwk/v
+        Lc3pQ4qduxzP13wSvTNgplA5y+H0Q0IYATzfvdQaKTUW2ZJ4Z8CotrlX1bVctZ8oIcx/JqwHE+CsNk6Q
+        JHU2154MVu4XDwWAqyNHyn0nIlECPBVuW4cxNgMBYXxHQas3CwTBGDBhAweEMREDQRIcuQdIjpdQosOM
+        /hIRmIlPwhdgZcJMXJI5dlrikr9gRpf8DTOUZMOG8QH01g5yBjsSZwAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

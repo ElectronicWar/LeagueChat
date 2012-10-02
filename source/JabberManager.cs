@@ -135,7 +135,7 @@ namespace LolChatWin
             c.AutoLogin = true;
             c.AutoPresence = true;
             
-            if (server == 0 )
+            if (server == 0)
             {
                 c.NetworkHost = "chat.na.lol.riotgames.com";
             }
